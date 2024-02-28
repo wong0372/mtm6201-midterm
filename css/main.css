@@ -22,7 +22,7 @@ p, h1, h2, h3 {
   }
 
 .header-logo {
-    max-width: auto; 
+    max-width: 100%; 
     padding: 20px;
     height: 5rem;
 }
@@ -269,8 +269,11 @@ footer {
     font-weight: bold;
 }
 
-/***********************************************************/
+
+
+/**********************************************************************/
 /*** iPad & Desktop style - 820px above***/
+/**********************************************************************/
 @media screen and (min-width: 415px) {
 
 /* style the navigation menu */
@@ -360,7 +363,7 @@ nav .menubtn i {
 
 /*** rise image-container to overlap the banner ***/
 .image-container {
-    margin-top:-10rem;
+    margin-top:-9rem;
     position: relative;
     z-index:99;
 }
@@ -410,11 +413,15 @@ h2, h3 {
 .main-text-1{
     grid-area: text;
     margin-right:-5rem;
+    padding-left: 20px;
 }
 
 .main-image-1 {
     grid-area: image;
 }
+
+
+
 
 /*** style download-apps section ***/
 /* add section background */

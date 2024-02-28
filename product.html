@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bella Onojie-Food for Everyone</title>
+    <!-- Font link styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icon link styles -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/product.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <nav class="navbar">
+          <img src="images/1_logo.png" alt="logo" class="header-logo" />
+          <!-- add checkbox to show or hide the menu -->
+          <!-- associated label toggles the checkbox's state -->
+          <input type="checkbox" id="clickbox" />
+          <label for="clickbox" class="menubtn">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+
+          <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="product.html">Product</a></li>
+            <li><a href="#">Faq</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section class="product-banner">
+          <h1>Have a food life</h1>
+          <p class="product-banner-text">Let's explore our menu!</p>
+        </section>
+
+        <section class="products">
+          <h2>Our Popular Dishes</h2>
+          <div class="product-menu">
+            <div class="product-food">
+              <h3>Caprese Pizza</h3>
+              <img
+                src="images/9_1_caprese-pizza-397.png"
+                alt="Caprese Pizza"
+                class="product-image pizza"
+              />
+              <span class="price">$14.99</span>
+              <button type="button" class="style1">Add to Cart</button>
+            </div>
+
+            <div class="product-food">
+              <h3>Beef Noodles Stir Fry</h3>
+              <img
+                src="images/9-1_beef-noodles-stir-fry.png"
+                alt="Beef Noodles Stir Fry"
+                class="product-image noodles"
+              />
+              <span class="price">$14.99</span>
+              <button type="button" class="style1">Add to Cart</button>
+            </div>
+
+            <div class="product-food">
+              <h3>Fried Chicken with Fries</h3>
+              <img
+                src="images/9-1_fried-chicken-with-french-fries.png"
+                alt="Fried Chicken with Fries"
+                class="product-image fries"
+              />
+              <span class="price">$12.99</span>
+              <button type="button" class="style1">Add to Cart</button>
+            </div>
+
+            <div class="product-food">
+              <h3>Grilled Chicken Tacos</h3>
+              <img
+                src="images/9-1_grilled-chicken-tacos.png"
+                alt="Grilled Chicken Tacos"
+                class="product-image tacos"
+              />
+              <span class="price">$12.99</span>
+              <button type="button" class="style1">Add to Cart</button>
+            </div>
+
+            <div class="product-food">
+              <h3>Veggie Burger</h3>
+              <img
+                src="images/9-1_veggie-burger.png"
+                alt="Veggie Burger"
+                class="product-image burger"
+              />
+              <span class="price">$10.99</span>
+              <button type="button" class="style1">Add to Cart</button>
+            </div>
+
+            <div class="product-food">
+              <h3>Zapiekanka</h3>
+              <img
+                src="images/9-1_zapiekanka.png"
+                alt="Zapiekanka"
+                class="product-image zai"
+              />
+              <span class="price">$10.99</span>
+              <button type="button" class="style1">Add to Cart</button>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <hr class="custom-hr-1" />
+      <footer class="footer">
+        <img
+          src="images/8_footer-logo.png"
+          alt="footer logo"
+          class="footer-logo"
+        />
+        <div class="icons">
+          <i class="fa-brands fa-twitter media-icon"></i>
+          <i class="fa-brands fa-square-facebook media-icon"></i>
+          <i class="fa-brands fa-instagram media-icon"></i>
+        </div>
+        <p class="footertext">Just type what's on your mind and we'll</p>
+      </footer>
+    </div>
+  </body>
+</html>
