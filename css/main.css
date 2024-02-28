@@ -3,8 +3,7 @@
     max-width: 1440px;
     font-family: "Montserrat", sans-serif;
     font-size: 12px;
-    margin-left: 0;
-    margin-right: 0;
+    margin: auto;
     color: #737373;
 }
 
@@ -25,6 +24,16 @@ p, h1, h2, h3 {
 .header-logo {
     max-width: auto; 
     padding: 20px;
+    height: 5rem;
+}
+
+/* butter on hover */
+.style1:hover,
+.style2:hover,
+.style3:hover,
+.style4:hover {
+    background-color: rgb(2, 68, 0);
+    transform: scale(1.1) ;
 }
 
 /*** style navigation bar ***/
@@ -73,8 +82,9 @@ color: #FA4A0C;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 nav .menubtn i {
@@ -102,10 +112,10 @@ nav .menubtn i {
 }
 
 .size3 {
-    font-size: 24px;
+    font-size: 36px;
     color: rgba(0, 0, 0, 1);
     font-weight: 500;
-    padding-bottom: 30px;
+    padding-bottom: 120px;
 }
 
 h1 {
@@ -145,7 +155,7 @@ h3 {
 }
 
 .style2 {
-    background-color: white;
+    background-color: transparent;
     color: #FA4A0C;
     font-weight: 600;
     border-radius: 20px;
@@ -175,7 +185,7 @@ h3 {
 /* custom horizontal rule */
 .custom-hr {
     border: 1px solid rgba(228, 228, 228, 1);
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 /*** style download-apps section ***/
@@ -194,6 +204,7 @@ h3 {
     color: white;
     margin: 60px 40px 0px 40px;
 }
+
 .greyfont {
     color:rgba(189, 189, 189, 1);
     font-size: 24px;
@@ -201,7 +212,7 @@ h3 {
     margin: 40px 50px 40px 50px;
 }
 
-/* style button */
+/* style button in download-apps section */
 .style3 {
     background-color: #FA4A0C;
     color: white;
@@ -229,12 +240,38 @@ h3 {
 .button-align {
     display: flex;
     justify-content: center;
-    gap:10px;
+    gap:20px;
 }
 
-/*********************************************/
+/*** style footer ***/
+footer {
+    height: 120px;
+}
+
+.footer-logo {
+    display: none;
+}
+
+.media-icon {
+    color:#FA4A0C; 
+    font-size: 40px;
+    text-align: center;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap:30px;
+    margin: 80px 0 20px 0;
+}
+
+.footertext {
+    font-weight: bold;
+}
+
+/***********************************************************/
 /*** iPad & Desktop style - 820px above***/
-@media screen and (min-width: 819px) {
+@media screen and (min-width: 415px) {
 
 /* style the navigation menu */
 nav {
@@ -279,5 +316,150 @@ nav .menubtn i {
     display:none;
 }
 
+/*** style banner-section ***/
+/* add banner */
+.banner-container {
+    background: url(../images/2_header-banner.png);
+    background-size: cover;
+    position: relative;
+    width:100%;
+    height: 70vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+/* change font color */
+.banner-container h1 {
+    color: white;
+    max-width: 600px;
+    letter-spacing:0.5px;
+}
+
+.style2 {
+    color: white;
+    border: 1px solid white;
+}
+
+/* rise banner text */
+.bannertext{
+    position: absolute;
+    top:4rem;
+}
+
+/* change button position */
+.button-mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:20px;
+}
+
+/*** rise image-container to overlap the banner ***/
+.image-container {
+    margin-top:-10rem;
+    position: relative;
+    z-index:99;
+}
+
+.custom-hr {
+    width:50%
+}
+
+/*** style main-content ***/
+/* style the 1st & 3rd part of main content */
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    'image text'
+}
+
+.main-text{
+    grid-area: text;
+    margin-left:-5rem;
+}
+
+.main-image {
+    grid-area: image;
+}
+
+.size2 {
+    padding-left: 0px;
+    text-align: left;
+    max-width: 600px;;
+}
+
+h2, h3 {
+    text-align: left;
+    padding-left: 0px;
+    max-width: 600px;;
+}
+
+/* style the 2nd part of main content */
+.main-content-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    'text image'
+}
+
+.main-text-1{
+    grid-area: text;
+    margin-right:-5rem;
+}
+
+.main-image-1 {
+    grid-area: image;
+}
+
+/*** style download-apps section ***/
+/* add section background */
+.download-apps {
+    background: url(../images/7_footer-banner.png);
+    background-size: cover;
+    position: relative;
+    width:100%;
+    height: 70vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* adjust position and color */
+.whitefont {
+    margin: 0px 40px 0px 40px;
+}
+
+.greyfont {
+    color:white;
+    margin: 20px 50px 50px 50px;
+}
+
+/*** style footer ***/
+/* show logo */
+.footer-logo {
+    display: block;
+    padding: 0px 20px 0px 20px;
+    height: 4rem;
+
+}
+
+.footer {
+    height:180px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icons {
+    margin: 0;
+}
 
 }    
