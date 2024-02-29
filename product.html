@@ -28,9 +28,14 @@
         <li><a href="#main-nav">Skip to main nav</a></li>
         <li><a href="#main-content">Skip to main content</a></li>
       </ul>
-      <header>
+      <header role="banner">
         <nav role="navigation" class="navbar" id="main-nav">
-          <img src="images/1_logo.png" alt="logo" class="header-logo" />
+          <img
+            role="img"
+            src="images/1_logo.png"
+            alt="logo"
+            class="header-logo"
+          />
           <!-- add checkbox to show or hide the menu -->
           <!-- associated label toggles the checkbox's state -->
           <input type="checkbox" id="clickbox" />
@@ -38,7 +43,7 @@
             <i class="fa-solid fa-bars"></i>
           </label>
 
-          <ul class="menu">
+          <ul role="menubar" class="menu">
             <li><a href="index.html">Home</a></li>
             <li><a class="active" href="product.html">Product</a></li>
             <li><a href="#">Faq</a></li>
@@ -49,94 +54,184 @@
 
       <main role="main" id="main-content">
         <!-- add banner section -->
-        <section class="product-banner">
-          <h1>Have a food life</h1>
+        <section role="region" class="product-banner">
+          <h1 role="heading" aria-level="1">Have a food life</h1>
           <p class="product-banner-text">Let's explore our menu!</p>
         </section>
 
         <!-- add menu section x 6products -->
-        <section class="products">
-          <h2>
+        <section role="region" class="products">
+          <h2 role="heading" aria-level="2">
             Our Popular Dishes
             <img
+              role="img"
               src="images/0_burger-svgrepo-com.svg"
               alt="A burger logo"
               class="burger-svg"
             />
           </h2>
           <div class="product-menu">
-            <div class="product-food">
-              <h3>Caprese Pizza</h3>
+            <div
+              class="product-food"
+              itemscope
+              itemtype="https://schema.org/Product"
+            >
+              <h3 role="heading" aria-level="3" itemprop="name">
+                Caprese Pizza
+              </h3>
               <img
+                itemprop="image"
+                role="img"
                 src="images/9_1_caprese-pizza-397.png"
                 alt="Caprese Pizza"
                 class="product-image pizza"
               />
-              <span class="price">$14.99</span>
-              <button type="button" class="style1">Add to Cart</button>
+              <span class="price" itemprop="price">$14.99</span>
+              <button
+                type="button"
+                class="style1"
+                role="button"
+                aria-label="Add Caprese Pizza to Cart"
+              >
+                Add to Cart
+              </button>
             </div>
 
-            <div class="product-food">
-              <h3>Beef Noodles Stir Fry</h3>
+            <div
+              class="product-food"
+              itemscope
+              itemtype="https://schema.org/Product"
+            >
+              <h3 role="heading" aria-level="3" itemprop="name">
+                Beef Noodles Stir Fry
+              </h3>
               <img
+                itemprop="image"
+                role="img"
                 src="images/9-1_beef-noodles-stir-fry.png"
                 alt="Beef Noodles Stir Fry"
                 class="product-image noodles"
               />
-              <span class="price">$14.99</span>
-              <button type="button" class="style1">Add to Cart</button>
+              <span class="price" itemprop="price">$14.99</span>
+              <button
+                type="button"
+                class="style1"
+                role="button"
+                aria-label="Add Beef Noodles Stir Fry to Cart"
+              >
+                Add to Cart
+              </button>
             </div>
 
-            <div class="product-food">
-              <h3>Fried Chicken with Fries</h3>
+            <div
+              class="product-food"
+              itemscope
+              itemtype="https://schema.org/Product"
+            >
+              <h3 role="heading" aria-level="3" itemprop="name">
+                Fried Chicken with Fries
+              </h3>
               <img
+                itemprop="image"
+                role="img"
                 src="images/9-1_fried-chicken-with-french-fries.png"
                 alt="Fried Chicken with Fries"
                 class="product-image fries"
               />
-              <span class="price">$12.99</span>
-              <button type="button" class="style1">Add to Cart</button>
+              <span class="price" itemprop="price">$12.99</span>
+              <button
+                type="button"
+                class="style1"
+                role="button"
+                aria-label="Add Fried Chicken with Fries to Cart"
+              >
+                Add to Cart
+              </button>
             </div>
 
-            <div class="product-food">
-              <h3>Grilled Chicken Tacos</h3>
+            <div
+              class="product-food"
+              itemscope
+              itemtype="https://schema.org/Product"
+            >
+              <h3 role="heading" aria-level="3" itemprop="name">
+                Grilled Chicken Tacos
+              </h3>
               <img
+                itemprop="image"
+                role="img"
                 src="images/9-1_grilled-chicken-tacos.png"
                 alt="Grilled Chicken Tacos"
                 class="product-image tacos"
               />
-              <span class="price">$12.99</span>
-              <button type="button" class="style1">Add to Cart</button>
+              <span class="price" itemprop="price">$12.99</span>
+              <button
+                type="button"
+                class="style1"
+                role="button"
+                aria-label="Add Grilled Chicken Tacos to Cart"
+              >
+                Add to Cart
+              </button>
             </div>
 
-            <div class="product-food">
-              <h3>Veggie Burger</h3>
+            <div
+              class="product-food"
+              itemscope
+              itemtype="https://schema.org/Product"
+            >
+              <h3 role="heading" aria-level="3" itemprop="name">
+                Veggie Burger
+              </h3>
               <img
+                itemprop="image"
+                role="img"
                 src="images/9-1_veggie-burger.png"
                 alt="Veggie Burger"
                 class="product-image burger"
               />
-              <span class="price">$10.99</span>
-              <button type="button" class="style1">Add to Cart</button>
+              <span class="price" itemprop="price">$10.99</span>
+              <button
+                type="button"
+                class="style1"
+                role="button"
+                aria-label="Add Veggie Burger to Cart"
+              >
+                Add to Cart
+              </button>
             </div>
 
-            <div class="product-food">
-              <h3>Zapiekanka</h3>
+            <div
+              class="product-food"
+              itemscope
+              itemtype="https://schema.org/Product"
+            >
+              <h3 role="heading" aria-level="3" itemprop="name">Zapiekanka</h3>
               <img
+                itemprop="image"
+                role="img"
                 src="images/9-1_zapiekanka.png"
                 alt="Zapiekanka"
                 class="product-image zai"
               />
-              <span class="price">$10.99</span>
-              <button type="button" class="style1">Add to Cart</button>
+              <span class="price" itemprop="price">$10.99</span>
+              <button
+                type="button"
+                class="style1"
+                role="button"
+                aria-label="Zapiekanka"
+              >
+                Add to Cart
+              </button>
             </div>
           </div>
         </section>
       </main>
 
       <hr class="custom-hr-1" />
-      <footer class="footer">
+      <footer role="contentinfo" class="footer">
         <img
+          role="img"
           src="images/8_footer-logo.png"
           alt="footer logo"
           class="footer-logo"
@@ -147,7 +242,9 @@
           <i class="fa-brands fa-instagram media-icon"></i>
         </div>
         <p class="footertext">Just type what's on your mind and we'll</p>
-        <a href="#top"><i class="fa-solid fa-arrow-up"></i></a>
+        <a href="#top" aria-label="Back to top"
+          ><i class="fa-solid fa-arrow-up"></i
+        ></a>
       </footer>
     </div>
   </body>
