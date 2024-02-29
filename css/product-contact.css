@@ -141,10 +141,10 @@ label {
 }
 
 /**********************************************************************/
-/*** iPad & Desktop style - 414px above ***/
+/*** Table & Desktop style - 720px above ***/
 /**********************************************************************/
 
-@media screen and (min-width: 415px) {
+@media screen and (min-width: 720px) {
 
 /********* Product page ********/ 
 /* show product-banner */
