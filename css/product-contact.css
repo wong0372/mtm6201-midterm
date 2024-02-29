@@ -299,6 +299,7 @@ align-items: center;
     margin-bottom: 20px;
     width: 30%;
     transform: rotate(-2deg);
+    z-index: -99;
 }
 
 .contact-banner p {
@@ -307,6 +308,7 @@ align-items: center;
     color: white;
     width: 30%;
     transform: rotate(2deg);
+    z-index: -99;
 }
 
 /* style svg */
