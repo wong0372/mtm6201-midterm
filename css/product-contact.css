@@ -1,0 +1,362 @@
+/********* Product page ********/
+.container {
+    max-width: 1440px;
+    font-family: "Montserrat", sans-serif;
+    margin: auto;
+}
+.product-banner {
+    display: none;
+}
+
+/* adjust font style */
+.products h2 {
+    font-size: 40px;
+    text-align: center;
+    /* text-shadow: 2px 2px 4px rgba(58, 58, 58, 0.5); */
+    margin: 30px 0 30px 0;
+}
+
+.product-menu h3 {
+    font-size: 30px;
+    text-align: center;
+    line-height: 40px;
+    margin: 45px 0 0 0;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.product-food {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* hide burger */
+.burger-svg {
+    display: none;
+}
+
+/********* Contact page ********/
+
+/* style banner */
+.message-svg {
+    max-width: 100%;
+}
+
+.contact-banner h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #FA4A0C;
+}
+
+.contact-banner p {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: -2rem;
+}
+
+/* style contact form */
+.contact-form {
+   margin-left:20px;
+   margin-right: 20px;
+   border: 1px solid #ccc;
+   padding: 0 20px 20px 15px;
+   border-radius: 5px;
+   box-sizing: border-box;
+}
+
+#fullname, 
+#youremail,
+#subject {
+    width:100%;
+    line-height: 35px;
+    margin:10px 0 10px 0;
+}
+
+#yourmessage {
+    width: 100%;
+    line-height: 35px;
+    margin:10px 0 10px 0;
+    height: 100px;
+    resize: none;
+}
+
+/* style button */
+.submit-button {
+    background-color: #FA4A0C;
+    color: white;
+    font-weight: 600;
+    border-radius: 20px;
+    border: none;
+    font-family: "Montserrat";
+    font-size: 16px;
+    padding:10px 10px;
+    width:150px;
+    transition: 0.2s;
+}
+
+.submit-button:hover,
+.submit-button:active {
+    cursor: pointer;
+}
+
+.submit-button:active {
+    transform: rotate(360deg) scale(1.2);
+}
+
+label {
+    font-weight: 500;
+}
+
+/* style our information */
+.our-info {
+    background-color: #FA4A0C;
+    width:100%;
+    height: 35vh;
+    margin-top: 20px;
+    text-align: center;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.our-info h2 {
+    color: white;
+    padding-right: 0px;
+    text-align: center;
+}
+
+.our-info li {
+    font-weight: 500;
+    padding: 2px 0;
+    font-size: 14px;
+}
+
+/**********************************************************************/
+/*** iPad & Desktop style - 820px above***/
+/**********************************************************************/
+
+@media screen and (min-width: 415px) {
+
+/********* Product page ********/ 
+/* show product-banner */
+.product-banner {
+        display: block;
+        background-image: url(../images/9-0_product-banner.png);
+        background-size: cover;
+        position: relative;
+        width:100%;
+        height: 70vh;
+        color: white;
+        z-index: 1;
+    }
+
+/* adjust text style */
+.product-banner h1 {
+    color: white;
+    text-align: center;
+    font-size: 45px;
+    position:absolute;
+    top:40%;
+    left: 20%;
+    right: auto;
+}
+
+.product-banner-text {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 500;
+    position:absolute;
+    top:55%;
+    left: 25%;
+    right: auto;
+}
+
+.products h2 {
+    font-size: 40px;
+    text-align: left;
+    padding-left: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0);
+}
+
+/* grid menu */
+.product-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    '1 2 3'
+    '4 5 6'
+}
+
+.pizza{
+    grid-area: 1;
+}
+
+.noodles{
+    grid-area: 2;
+}
+
+.fries{
+    grid-area: 3;
+}
+
+.tacos{
+    grid-area: 4;
+}
+
+.burger{
+    grid-area: 5;
+}
+
+.zai{
+    grid-area: 6;
+}
+
+/* image shrink when window size decrease */
+.product-image {
+    max-width: 100%; 
+    height: auto; 
+}
+
+.custom-hr-1 {
+    width:100%;
+    border: 1px solid rgba(228, 228, 228, 1);
+    margin-top: 40px;
+}
+
+/* product page - display burger with animation(1) */
+.burger-svg {
+    display: inline;
+    width:12%;
+}
+
+.burger-svg:hover {
+    cursor: pointer;
+}
+
+@keyframes burger {
+    0%{
+      transform: rotateX(45deg);
+    }
+
+    100%{
+      transform: rotateX(-45deg);
+    }
+}
+  
+.burger-svg {
+    animation-name: burger;
+    animation-duration:1.3s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+  }
+
+  @keyframes hover {
+    0%{
+      transform: rotate(360deg) scale(0.5);
+    }
+
+    100%{
+      transform: rotate(-360deg) scale(2);
+    }
+}
+  
+.burger-svg:hover {
+    animation-name: hover;
+    animation-duration: 2s;
+    animation-timing-function:ease-in;
+    animation-iteration-count:1;
+    animation-direction: normal;
+  }
+
+
+/********* Contact page ********/
+
+/* adjust banner position */
+.contact-banner-1,
+.contact-banner-2 {
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+
+/* change font style and position */
+.contact-banner h1 {
+    background-color: #FA4A0C;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 30%;
+    transform: rotate(-2deg);
+}
+
+.contact-banner p {
+    background-color: #FA4A0C;
+    padding: 10px;
+    color: white;
+    width: 30%;
+    transform: rotate(2deg);
+}
+
+/* style svg */
+.message-svg {
+    width:25%;
+    height: auto;
+    margin-top: 15px;
+}
+
+.contact-form {
+    max-width: 80%; 
+    margin-right: auto;
+    margin-left:auto;
+} 
+
+/* contact page - banner with animation(2) */
+@keyframes contact {
+    0%{
+      transform: translateX(-800px);
+    }
+
+    100%{
+      transform: translateX(0px);
+    }
+}
+  
+.contact-banner-1 {
+    animation-name: contact;
+    animation-duration:.5s;
+    animation-timing-function:linear;
+    animation-iteration-count:1;
+    animation-direction: alternate;
+  }
+
+@keyframes logo {
+    0%{
+      transform: translateX(800px);
+    }
+
+    100%{
+      transform: translateX(0px);
+    }
+}
+  
+.contact-banner-2 {
+    animation-name: logo;
+    animation-duration:.5s;
+    animation-timing-function:linear;
+    animation-iteration-count:1;
+    animation-direction: alternate;
+  }
+
+
+}

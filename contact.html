@@ -18,13 +18,18 @@
     />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/product.css" />
+    <link rel="stylesheet" href="css/product-contact.css" />
   </head>
 
   <body>
-    <div class="container">
+    <div class="container" id="top">
+      <!-- add skip link -->
+      <ul role="list" class="skip-links">
+        <li><a href="#main-nav">Skip to main nav</a></li>
+        <li><a href="#main-content">Skip to main content</a></li>
+      </ul>
       <header>
-        <nav class="navbar">
+        <nav role="navigation" class="navbar" id="main-nav">
           <img src="images/1_logo.png" alt="logo" class="header-logo" />
           <!-- add checkbox to show or hide the menu -->
           <!-- associated label toggles the checkbox's state -->
@@ -42,7 +47,81 @@
         </nav>
       </header>
 
-      <main></main>
+      <main role="main" id="main-content">
+        <!-- add banner section -->
+        <section class="contact-banner">
+          <div class="contact-banner-1">
+            <h1>Contact Us</h1>
+            <p>Get in touch with us via message.</p>
+          </div>
+
+          <div class="contact-banner-2">
+            <img
+              src="images/0_message-svgrepo-com.svg"
+              alt="Message icon"
+              class="message-svg"
+            />
+          </div>
+        </section>
+
+        <!-- add contact form -->
+        <section class="contact-form">
+          <div class="text">
+            <h2>Send us a message</h2>
+            <div class="name">
+              <label for="fullname">Full Name</label>
+              <input
+                type="text"
+                id="fullname"
+                name="fullname>"
+                placeholder="Your name"
+              />
+            </div>
+
+            <div class="email">
+              <label for="youremail">Email</label>
+              <input type="email" id="youremail" placeholder="Your email" />
+            </div>
+
+            <div class="subject">
+              <label for="subject">Subject</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Subject"
+              />
+            </div>
+
+            <div class="message">
+              <label for="yourmessage">Message</label>
+              <textarea
+                name="message"
+                id="yourmessage"
+                placeholder="Your message"
+              ></textarea>
+            </div>
+
+            <br />
+            <button type="submit" class="submit-button">Send</button>
+          </div>
+        </section>
+
+        <!-- add our contact information -->
+        <section class="our-info">
+          <h2>Our information</h2>
+          <ul>
+            <li>Bella onoje</li>
+            <li>123 Piano Road, Kanata,</li>
+            <li>Canada K1C 0L0</li>
+          </ul>
+          <br />
+          <ul>
+            <li>Email: foodapps@bella.ca</li>
+            <li>Phone: 613-000-0000</li>
+          </ul>
+        </section>
+      </main>
 
       <footer class="footer">
         <img
@@ -56,6 +135,7 @@
           <i class="fa-brands fa-instagram media-icon"></i>
         </div>
         <p class="footertext">Just type what's on your mind and we'll</p>
+        <a href="#top"><i class="fa-solid fa-arrow-up"></i></a>
       </footer>
     </div>
   </body>
