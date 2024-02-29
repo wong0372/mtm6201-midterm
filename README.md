@@ -2,6 +2,7 @@
 
 1. I choose the following design for my mid-term.
 
+Credit to:
 Food app
 Author: Marvis
 Attribution link:

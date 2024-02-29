@@ -331,11 +331,29 @@ footer {
     transform: scale(1.2);
 }
 
+/**********************************************************************/
+/*** Font in Table style ***/
+/**********************************************************************/
+@media screen and (min-width: 720px) and (max-width: 819px) {
+    
+    h2 {
+        font-size: 24px;
+    }
+    
+    h3 {
+        font-size: 30px;
+    }
+
+    .size2 {
+        font-size: 20px;
+    }
+
+}
 
 /**********************************************************************/
-/*** iPad & Desktop style - 820px above***/
+/*** Desktop style - 820px above ***/
 /**********************************************************************/
-@media screen and (min-width: 415px) {
+@media screen and (min-width: 720px) {
 
 /* style the navigation menu */
 nav {
