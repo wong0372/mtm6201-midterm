@@ -13,3 +13,9 @@ https://www.figma.com/community/file/893381127703378146
 4. Skip-link added on 3 pages.
 5. Style back to top logo to enhance the user experience of site
 6. Optimized photos: 2 sizes for each photo, target large(720px above) and small screens(under 720px) respectively
+7. Added SVG images to product and contact page to create animation.
+   SVG images sources:
+   https://www.svgrepo.com/svg/287733/burger
+   https://www.svgrepo.com/svg/514320/message
+8. Product page images sources:
+   https://www.freepik.com/
