@@ -30,7 +30,7 @@
       </ul>
       <header role="banner">
         <nav role="navigation" class="navbar" id="main-nav">
-          <img src="images/1_logo.png" alt="logo" class="header-logo" />
+          <img src="images/1_logo.svg" alt="logo" class="header-logo" />
           <!-- add checkbox to show or hide the menu -->
           <!-- associated label toggles the checkbox's state -->
           <input type="checkbox" id="clickbox" />
@@ -69,7 +69,7 @@
         <section role="region" class="contact-form">
           <h2>Send us a message</h2>
           <div class="name" role="form" aria-label="Add Full Name">
-            <label for="fullname">Full Name</label>
+            <label for="fullname" class="title">Full Name</label>
             <input
               type="text"
               id="fullname"
@@ -79,12 +79,12 @@
           </div>
 
           <div class="email" role="form" aria-label="Add Email">
-            <label for="youremail">Email</label>
+            <label for="youremail" class="title">Email</label>
             <input type="email" id="youremail" placeholder="Your email" />
           </div>
 
           <div class="subject" role="form" aria-label="Subject">
-            <label for="subject">Subject</label>
+            <label for="subject" class="title">Subject</label>
             <input
               type="text"
               id="subject"
@@ -94,7 +94,7 @@
           </div>
 
           <div class="message" role="form" aria-label="Add your message">
-            <label for="yourmessage">Message</label>
+            <label for="yourmessage" class="title">Message</label>
             <textarea
               name="message"
               id="yourmessage"
@@ -127,7 +127,7 @@
       <footer class="footer" role="contentinfo">
         <img
           role="img"
-          src="images/8_footer-logo.png"
+          src="images/8_footer-logo.svg"
           alt="footer logo"
           class="footer-logo"
         />
@@ -137,10 +137,10 @@
           <i class="fa-brands fa-instagram media-icon"></i>
         </div>
         <p class="footertext">Just type what's on your mind and we'll</p>
-        <a href="#top" aria-label="Back to top"
-          ><i class="fa-solid fa-arrow-up"></i
-        ></a>
       </footer>
+      <a href="#top" aria-label="Back to top"
+        ><i class="fa-solid fa-arrow-up"></i
+      ></a>
     </div>
   </body>
 </html>
