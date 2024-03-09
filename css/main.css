@@ -75,7 +75,7 @@ p, h1, h2, h3 {
 }
 
 /*** style navigation bar ***/
-/* hide the menu and display only the menu icon */
+/* hide the menu content and display only the menu icon */
 nav ul {
     position: fixed;
     top: 120px;
@@ -85,7 +85,7 @@ nav ul {
     display: block;
     text-align: center;
     background:white;
-    transition: all 0.2s ease;
+    transition: all 0.2s;
   }
 
 nav ul li {
@@ -105,7 +105,7 @@ nav ul li a.active {
 color: #AD0000; 
 }
 
-/* scroll the menu out */
+/* scroll the menu out and make it visible*/
 #clickbox:checked ~ ul {
     left: 0%;
 }
@@ -115,7 +115,7 @@ color: #AD0000;
     content: "\f00d";
 }
 
-/* menubtn position */
+/* menubtn position and style*/
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -126,9 +126,8 @@ color: #AD0000;
 }
 
 nav .menubtn i {
-    display:block;
     color:#737373;
-    font-size: 22px;
+    font-size: 28px;
     cursor: pointer;
   }
 
@@ -139,7 +138,6 @@ nav .menubtn i {
 /* add hidden text for screen reader */
 .screenreader {
     position: absolute;
-    overflow: hidden;
     display: none;
 }
  
@@ -376,10 +374,8 @@ nav {
 /* override value in mobile version */
 nav ul {
     position: static; 
-    top: auto; 
-    left: auto; 
-    height: auto; 
     width: auto;
+    height: auto;
     display: flex;
     list-style:none;
     align-items: center;
@@ -398,7 +394,7 @@ nav ul li a.active {
     color: #AD0000; 
 }
 
-/* hide menu icon in ipad & desktop */
+/* hide menu icon in table & desktop */
 nav .menubtn i {
     display:none;
 }
