@@ -19,3 +19,4 @@ https://www.figma.com/community/file/893381127703378146
    https://www.svgrepo.com/svg/514320/message
 8. Product page images sources:
    https://www.freepik.com/
+9. Changed color to #B30600 to fix contrast
